@@ -1,2 +1,2 @@
 #!/bi/bash
-cat /etc/passd
+cat /etc/passwd
