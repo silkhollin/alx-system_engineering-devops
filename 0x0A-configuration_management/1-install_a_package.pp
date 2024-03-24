@@ -1,6 +1,13 @@
-# Installs puppet-lint
+# Installs flask via pip, and Werkzeug 2.1.1
 
-package { 'puppet-lint':
+package { 'Flask':
+  ensure   => '2.1.0',
+  provider => 'pip3',
+}
+
+# installing Werkzeug too , requires flask 
+package { 'Werkzeug':
   ensure   => '2.1.1',
-  provider => 'gem',
+  provider => 'pip3',
+  require  => Package['Flask'],
 }
