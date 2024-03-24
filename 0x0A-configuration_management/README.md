@@ -1,1 +1,1 @@
-cnifguratio n management with puppet over common way
+server configuration management with Puppet
