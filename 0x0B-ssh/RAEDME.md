@@ -1,1 +1,0 @@
-ssh and server manangement
