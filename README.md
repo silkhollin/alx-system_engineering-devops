@@ -1,2 +1,1 @@
-# alx-system_engineering-devops
-for shell basics
+networking with python
