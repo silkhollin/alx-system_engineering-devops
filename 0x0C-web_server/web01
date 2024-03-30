@@ -1,0 +1,7 @@
+#bash script to connect me to my server
+
+eval $("ssh-agent")
+
+ssh-add ~/.ssh/school
+
+ssh ubuntu@54.160.64.188
