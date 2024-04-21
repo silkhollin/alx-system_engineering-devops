@@ -1,0 +1,17 @@
+
+defaults
+  mode http
+  timeout client 15s
+  timeout connect 10s
+  timeout server 15s
+  timeout http-request 10s
+
+frontend Cole-tech-frontend
+    bind *:80
+    default_backend Cole-tech-backend
+
+backend Cole-tech-backend
+    balance roundrobin
+    server 435585-web-01 54.160.64.188:80 check
+    server 435585-web-02 54.173.84.238:80 check
+
